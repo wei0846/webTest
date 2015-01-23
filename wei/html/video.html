@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<html>
+<head>
+<title>HTML5视频播放</title>
+<style type="text/css">
+body{text-align: left;}
+
+</style>
+
+
+<script type="text/javascript">
+
+var video1;
+window.onload=function(){video1=document.getElementById("myvideo");
+};
+
+
+
+function control(flag)
+{ 
+	switch (flag)
+	{
+	case 0:video1.play();break;
+     case 1:video1.pause();break;
+     case 2:video1.currentTime+=10;break;
+     case 3:video1.currentTime-=10;break;
+     case 4:video1.muted=true;break;
+     case 5:video1.muted=false;break;
+     case 6:video1.webkitEnterFullScreen();
+     video1.mozRequestFullScreen();break;
+     default:alert(9);
+    }
+}
+
+</script>
+</head>
+<body>
+<br/>
+<video id="myvideo" width="400">
+<source src="../video/qq.mp4"/>
+</video>
+<button id="pid" onclick="control(0)">播放</button>
+<button id="qid" onclick="control(1)">暂停</button>
+<button id="kj" onclick="control(2)">快进</button>
+<button id="kt" onclick="control(3)">快退</button>
+<button id="qp" onclick="control(4)">静音</button>
+<button id="xp" onclick="control(5)">退出静音</button>
+<button onclick="control(6)">全屏</button>
+</body>
+</html>
