@@ -5,7 +5,7 @@
 一、CSS3选择器：[http://www.w3school.com.cn/cssref/css_selectors.asp](http://www.w3school.com.cn/cssref/css_selectors.asp "选择器")
 	
 
-	1.after、before选择器:[display](http://www.w3school.com.cn/cssref/pr_class_display.asp "display属性值")
+	1.after、before选择器:【display属性】[http://www.w3school.com.cn/cssref/pr_class_display.asp ](http://www.w3school.com.cn/cssref/pr_class_display.asp  "display属性")
  display的值"inline-table"、"run-in"、"table"、"table-caption"、"table-cell"、"table-column"、"table-column-group"、"table-row"、"table-row-group"、以及 "inherit"。
 
 
