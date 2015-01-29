@@ -2,13 +2,15 @@
 <html lang="en-US"> 
 <meta charset=utf-8>
 <head >
-<title>测试页面</title>
+<title>语言伪类选择器</title>
 <style type="text/css">
 *{text-align: center;}
 #brand{margin-top: 100px;}
 a:link {text-decoration:none;}
 body:lang(fr){color: red;}
-body:lang(en){color: blue;quotes: '?' '?'}
+body:lang(en){color: blue;
+	quotes: ' "' ' "';/*quotes  对应<q></q>;此处作用即是将Lorem ipsum dolor...变成？Lorem ipsum dolor...？*/
+}
 </style>
 </head>
 <body lang="en">
