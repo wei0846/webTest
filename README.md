@@ -7,7 +7,6 @@
 2. 实用插件：[http://www.qianduan.net/essential-to-sublime-the-text-2-plugins.html](http://www.qianduan.net/essential-to-sublime-the-text-2-plugins.html "插件")
 3. CSS3浏览器兼容的前缀添加[http://css3please.com/](http://css3please.com/)
 4. 前端必备工具-Emmet (Zen Coding)【sublime text3安装zen coding】 [http://www.cnblogs.com/tinyphp/archive/2013/07/25/3214708.html](http://www.cnblogs.com/tinyphp/archive/2013/07/25/3214708.html)
-
 ----------
 [http://www.daqianduan.com/4820.html](http://www.daqianduan.com/4820.html)
 
@@ -50,7 +49,7 @@
 ----------
 
 # css3学习 #[http://www.xv90.com/post-59.html](http://www.xv90.com/post-59.html)
-
+## 制作CSS3按钮等UI控件的工具[http://css3please.com/](http://css3please.com/) [http://www.cssbuttongenerator.com/](http://www.cssbuttongenerator.com/)##
 一、CSS3选择器：[http://www.w3school.com.cn/cssref/css_selectors.asp](http://www.w3school.com.cn/cssref/css_selectors.asp "选择器")
 	
 
