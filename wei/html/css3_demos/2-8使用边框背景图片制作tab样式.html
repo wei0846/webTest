@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用边框背景图片制作tab样式</title>
+<style type="text/css">
+	.tabs-box{
+		border-bottom: 3px solid #9eaab6;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		zoom:1;
+	}
+
+	.tabs-box li{
+		width: 60px;
+		float: left;
+		display: inline;
+		margin: 0px 12px 0px 0px;
+		list-style: none outside none;
+		border:1px solid #9eaab6;
+		padding: 5px;
+		border-image: url(border.jpg) 115 90 0 90;
+		border-width: 20px 20px 0 20px;
+		text-align: center;
+		text-shadow:0 -1px 0 rgba(0,0,0,0.8);
+		color: rgba(0,125,100,0.3);
+	}
+	a:link{text-decoration: none;}
+	a:hover{color: black;}
+	a:active{color: red;}
+</style>	
+</head>
+<body>
+	<ul class="tabs-box">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">CSS3</a></li>
+		<li><a href="#">Html5</a></li>
+		<li><a href="#">jQuery</a></li>
+	</ul>
+</body>
+</html>

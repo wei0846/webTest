@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片内部阴影效果</title>
+	<style type="text/css">
+	.box-shadow{
+		display: inline-block;
+		/*display:inline-block
+简单来说就是将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格。*/
+		box-shadow: 5px 5px 5px 10px orange inset;
+		}
+		img{
+			position: relative;/*相对定位*/
+			z-index: -1;/*定义和用法
+z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+
+注释：元素可拥有负的 z-index 属性值。
+
+注释：Z-index 仅能在定位元素上奏效（例如 position:absolute;）！
+
+说明
+该属性设置一个定位元素沿 z 轴的位置，z 轴定义为垂直延伸到显示区的轴。如果为正数，则离用户更近，为负数则表示离用户更远。
+*/
+			vertical-align: top;
+			width: 200px;
+		}
+		</style>
+</head>
+<body>
+	<div class="box-shadow"><img src="border.jpg" alt=""></div>
+</body>
+</html>

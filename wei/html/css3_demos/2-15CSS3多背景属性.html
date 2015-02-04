@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3多背景属性</title>
+	<style type="text/css">
+	body{text-align: center;
+		background-color: #ccc;
+	}
+     #q1{
+  filter:alpha(opacity=60);
+  /* CSS3 standard 透明背景*/
+  opacity:0.6;
+
+
+
+     	margin: 20px;
+     	padding: 80px 60px;
+     	width: 240px;
+     	height: 200px;
+		border: 20px dashed red;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 1.5;
+     	background-color: orange;
+     	background-image: url(img/flower2.jpg),url(img/flower2-1.jpg),url(img/flower2-2.jpg),url(img/flower2-3.jpg),url(img/q1.jpg);
+     	background-repeat:  no-repeat,  no-repeat, no-repeat ,no-repeat,repeat;  
+        background-size: 35%,35%,35%,35%,100%;
+
+        background-position: left bottom,left top,right bottom ,right top,left top;
+        background-origin:  border-box,  border-box,b order-box,border-box,padding-box;
+          background-clip:  border-box;
+
+
+
+     }
+	</style>
+</head>
+<body>
+	<div id="q1">5个背景图片</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-shadow属性使用（阴影效果）</title>
+	<style type="text/css">
+      .box-shadow{
+      	width: 200px;
+      	height: 100px;
+      	border-radius: 5px;
+      	border: 1px solid #ccc;
+      	margin: 20px;
+      }
+
+      .top{
+      	box-shadow: 0 -2px 5px 9px red;
+      }
+      .right{
+      	box-shadow: 2px 0 5px 6px green;
+      }
+
+      .bottom{
+      	box-shadow: 0 2px 5px 6px blue;
+      }
+
+      .left{
+      	box-shadow: -2px 0 5px 6px orange;
+      	margin-bottom:90px;
+      }
+
+      #q1{
+      	width: 100px;
+      	height: 100px;
+      	border:12px dashed blue;
+      	background-color: orange;
+      	border-top-left-radius: 60px 90px;
+      	box-shadow: 64px 64px 24px 40px red,
+      	12px 12px 0px 18px green inset;
+      	background-image: url(border.jpg);
+      	background-position: top;
+      	background-size: 60% 92%;
+      	/*background-repeat: no-repeat;*/
+      }
+
+      #q2{
+      	width: 200px;
+      	height: 100px;
+      	border:1px solid #ccc;
+      	margin: 300px;
+      	box-shadow: 0 0 0 2px red,
+			      	0 0 0 5px blue,
+			      	0 0 0 8px green,
+			      	0 0 0 12px yellow,
+			      	0 0 0 16px orange,
+			      	0 0 0 20px #06c,
+			      	0 0 0 24px lime;
+      }
+	</style>
+</head>
+<body>
+	<div class="box-shadow top"></div>
+	<div class="box-shadow right"></div>
+	<div class="box-shadow bottom"></div>
+	<div class="box-shadow left"></div>
+	边框为蓝色；背景为橙色；内阴影为绿色；外阴影为红色<br/>
+	边框在内阴影上，内阴影在背景图片上，背景图片在背景色上，背景色在外阴影上
+	<br/>
+	边框>内阴影>背景图片>背景色>外阴影
+	<div id="q1"></div>
+	<div id="q2">多色彩边框</div>
+</body>
+</html>
