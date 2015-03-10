@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数对象</title>
+<script type="text/javascript">
+// function callSomeFunction(someFunction,someArgument)
+// {
+// 	return someFunction(someArgument);
+// }
+// 	function add10(num){
+// 		return num+10;
+// 	}
+
+// 	var result1=callSomeFunction(add10,10);
+// 	alert(result1);
+// 	function getGreeting(name){
+// 		return "Holle,"+name;
+
+// 	}
+// 	var result2=callSomeFunction(getGreeting,"Nicholas");
+// 	alert(result2);
+
+
+/*
+function factorial(num){
+	if(num<=1)
+		return 1;
+	else return num*factorial(num-1);
+}
+
+function factorial1(num){
+	if (num<=1)
+		return 1;
+	else return num*arguments.callee(num-1);
+}
+
+var trueFactorial=factorial1;
+
+factorial1=function(){return 0;}
+
+
+var q=factorial1(5);
+alert(trueFactorial(5));
+alert(q);
+
+
+window.color="red";
+var o={color:"blue"};
+function sayColor(){
+	alert(this.color);
+}
+sayColor();//red
+o.sayColor=sayColor;
+o.sayColor();//blue
+// */
+
+// var s="hello world";
+// // alert(htmlEscape("<div>ssssss</div>"));
+// alert(s.slice(3));
+// alert(s.substring(3));
+// alert(s.substr(3));
+// alert(s.slice(3,7));
+// alert(s.substring(3,7));
+// alert(s.substr(3,7));
+/*
+//1 2 3 4 5 6 7 8 9 10 11 12
+var nowPage=10;
+var allPage=12;
+var n=4;
+var l=0;
+if(2*n+1<=allPage&&nowPage>n&&allPage>nowPage+n)
+{
+l=2*n+1;
+var list=new Array(l);
+alert(list.length);
+
+for (var i=0; i < n; i++) {
+	
+	list[n-i-1]=nowPage-i-1;
+	list[n+i+1]=nowPage+i+1;
+    
+	}
+	qq(list);
+}
+
+else if(nowPage<=n&&allPage>nowPage+n)
+{
+    l=n+nowPage;
+    var list=new Array(l);
+    for(var i=0;i<list.length;i++)
+    	list[l-1-i]=n+nowPage--;
+    qq(list);
+}
+else if(nowPage>n&&allPage<=nowPage+n)
+{
+	 l=2*n+1-(n-allPage+nowPage);
+    var list=new Array(l);
+    for(var i=0;i<list.length;i++)
+    	{list[i]=-n+nowPage++;}
+    qq(list);
+}
+
+
+
+	
+
+function qq(list){
+	for (var i = 0; i < list.length; i++) {
+		if(list[i]>0)
+		alert(list[i]);
+	}}*/
+function b(x, y, a){
+
+a = 10;
+alert(arguments[2] );
+}
+b(1, 2, 3);
+</script>
+<style type="text/css">div{color: red;}</style>
+</head>
+<body>
+	
+</body>
+</html>
